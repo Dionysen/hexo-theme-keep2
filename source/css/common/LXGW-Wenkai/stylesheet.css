@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'LXGW WenKai Lite';
+    src: url('./common/LXGW-Wenkai/LXGWWenKaiLite-Bold.woff2') format('woff2'),
+        url('./common/LXGW-Wenkai/LXGWWenKaiLite-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'LXGW WenKai Lite';
+    src: url('./common/LXGW-Wenkai/LXGWWenKaiLite-Regular.woff2') format('woff2'),
+        url('./common/LXGW-Wenkai/LXGWWenKaiLite-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'LXGW WenKai Mono Lite';
+    src: url('LXGWWenKaiMonoLite-Bold.woff2') format('woff2'),
+        url('LXGWWenKaiMonoLite-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LXGW WenKai Mono Lite';
+    src: url('LXGWWenKaiMonoLite-Regular.woff2') format('woff2'),
+        url('LXGWWenKaiMonoLite-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

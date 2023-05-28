@@ -1,8 +1,8 @@
 $avatarWidth = 3rem
 $arrow-icon-width = 1rem
 $post-nav-max-width = 14rem
-$article-title-font-size = 1.6rem
-$toc-container-width = 15rem
+$article-title-font-size = 1.9rem
+$toc-container-width = 17rem //15
 
 
 .post-page-container {
@@ -41,11 +41,14 @@ $toc-container-width = 15rem
     box-sizing border-box
     width 100%
     height 100%
-    keep-container(false, 0, 0, 2rem, 2rem)
+    keep-container(false, 0rem, 0rem, 4rem, 5rem) // 正文边距
+
+    margin-top 5rems
 
     +keep-mobile() {
       padding 1.2rem 0.2rem
       box-shadow none
+      border none
 
       &:hover {
         box-shadow none
@@ -56,6 +59,7 @@ $toc-container-width = 15rem
     .article-title {
       color var(--text-color-2)
       font-weight 600
+      line-height 4rem
       font-size $article-title-font-size
 
       +keep-tablet() {
@@ -110,6 +114,7 @@ $toc-container-width = 15rem
           align-items center
           font-weight 600
           font-size 1.18rem
+          line-height 1.5rem
 
           .name {
             color var(--text-color-3)
@@ -117,7 +122,7 @@ $toc-container-width = 15rem
 
           .author-label {
             margin-left 0.8rem
-            padding 0 0.4rem
+            padding 0 0.2rem
             color #fff
             font-weight 500
             font-size 0.8rem
@@ -291,8 +296,11 @@ $toc-container-width = 15rem
     box-sizing border-box
     width $toc-container-width
     max-height 'calc(100vh - %s)' % ($header-height + $component-spacing-value)
-    padding 2rem 0 2rem 1.4rem
+    padding 2rem 0 3rem 3rem
     transition-t("top, display, max-height", "0, 0, 0", "0.2, 0.1, 0.2", "ease, ease, ease")
+
+    // border-right 1px solid var(--toc-border-color)
+    
 
     .header-shrink & {
       top $header-shrink-height + $component-spacing-value

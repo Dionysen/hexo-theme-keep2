@@ -8,8 +8,8 @@ $dark-code-background = darken($dark-background-color-1, 10%)
 
 
 if (hexo-config('code_block.highlight_theme') == 'obsidian') {
-  $toolbar-foreground = #b5b5b5
-  $toolbar-background = #3a3f40
+  $toolbar-foreground = #faf5d6
+  $toolbar-background = #273036
   $highlight-foreground = #faf5d6
   $highlight-background = #273036
   $highlight-gutter-color = #7a979a
@@ -43,12 +43,17 @@ if (hexo-config('code_block.highlight_theme') == 'obsidian') {
   $dark-highlight-addition = darken($highlight-addition, 2%)
 }
 else {
-  $toolbar-foreground = $text-color-3
-  $toolbar-background = $background-color-3
+  $toolbar-foreground = #f8f8f8
+  $toolbar-background = #f8f8f8
   $highlight-foreground = lighten($text-color-3, 2%)
-  $highlight-background = darken($background-color-1, 2%)
-  $highlight-gutter-color = lighten($text-color-3, 5%)
-  $highlight-gutter-bg-color = darken($background-color-1, 5%)
+  $highlight-background = #f8f8f8
+  // $highlight-gutter-color = lighten($text-color-3, 5%)
+  // $highlight-gutter-bg-color = darken($background-color-1, 5%)
+  $highlight-gutter-color = #8e908c
+  $highlight-gutter-bg-color =  #f8f8f8
+  $code-border = #e7eaed
+
+
   $highlight-comment = #8e908c
   $highlight-red = #c82829
   $highlight-orange = #f5871f
@@ -60,10 +65,12 @@ else {
   $highlight-deletion = #fdd
   $highlight-addition = #dfd
 
+  $dark-code-border = #2a2b30
   $dark-toolbar-foreground = $dark-text-color-3
-  $dark-toolbar-background = $dark-background-color-3
+  $dark-toolbar-background = $dark-background-color-2
   $dark-highlight-foreground = lighten($dark-text-color-3, 2%)
-  $dark-highlight-background = darken($dark-background-color-1, 8%)
+  // $dark-highlight-background = darken($dark-background-color-1, 2%) 
+  $dark-highlight-background = $dark-background-color-2
   $dark-highlight-gutter-color = lighten($dark-text-color-3, 5%)
   $dark-highlight-gutter-bg-color = darken($dark-background-color-1, 10%)
   $dark-highlight-comment = #969896
@@ -96,6 +103,9 @@ code-theme(mode) {
   --highlight-purple mode == 'light' ? $highlight-purple : $dark-highlight-purple
   --highlight-gutter-color mode == 'light' ? $highlight-gutter-color : $dark-highlight-gutter-color
   --highlight-gutter-bg-color mode == 'light' ? $highlight-gutter-bg-color : $dark-highlight-gutter-bg-color
+  --code-border mode == 'light' ? $code-border : $dark-code-border
+
+
 }
 
 

@@ -1,4 +1,6 @@
 @import "code-theme.styl"
+@import "./source-code-pro/stylesheet.css"
+
 
 $code-block {
   margin 1.5rem 0
@@ -8,22 +10,24 @@ $code-block {
   font-size 0.96rem
   line-height 1.5rem
   background var(--highlight-background)
+  border-radius 2px
   not-text-size-adjust()
 }
 
-
 pre
 code {
-  font-family "Source Code Pro", consolas, Menlo
+  font-family $default-code-font-family
 }
 
 code {
-  padding 0.4rem
+  padding 0px 2px 0px 2px
   color var(--code-foreground)
   font-size 0.96rem
   word-wrap break-word
+  white-space normal
   background var(--code-background)
-  border-radius 0.2rem
+  border-radius 2px
+  border 1px solid var(--code-border)
 }
 
 pre {
@@ -40,13 +44,29 @@ pre {
 
 .highlight {
   @extend $code-block
-  border-bottom-right-radius 0.1rem
-  border-bottom-left-radius 0.1rem
+  border-bottom-right-radius 1px
+  border-bottom-left-radius 1px
+
+  border-left 1px solid var(--code-border)
+  border-right 1px solid var(--code-border)
+  border-bottom 1px solid var(--code-border)
+
+  padding-left 10px
+  padding-right 10px
+
+  white-space normal
+  word-wrap break-word
 
   pre {
     margin 0
     padding 0.6rem 0
     border none
+    // white-space normal
+    // word-break normal
+    // word-wrap break-word
+
+    white-space break-spaces
+    font-size 0.96rem
   }
 
 
@@ -89,8 +109,9 @@ pre {
 
   .code pre {
     width 100%
-    padding-right 0.6rem
+    padding-right 0rem
     padding-left 0.6rem
+    // white-space normal
     background-color var(--highlight-background)
   }
 

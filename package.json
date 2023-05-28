@@ -31,7 +31,11 @@
   "devDependencies": {
     "prettier": "^2.7.1",
     "stylelint": "^14.13.0",
-    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-rational-order": "^0.0.4",
     "stylelint-stylus": "^0.17.0"
+  },
+  "dependencies": {
+    "hexo-deployer-git": "^4.0.0",
+    "hexo-generator-feed": "^3.0.0"
   }
 }

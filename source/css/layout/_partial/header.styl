@@ -1,4 +1,4 @@
-$logo-title-font-size = 2rem
+$logo-title-font-size = 1.6rem
 $pc-search-icon-font-size = 1.5rem
 $menu-bar-line-height = 2.5px
 $logo-image-box-width = 46px
@@ -11,9 +11,13 @@ $logo-image-box-width = 46px
   width 100%
   height 100%
   padding-top $scroll-progress-bar-height
+
   background var(--background-color-1)
 
   hover-style(false, 0, 0)
+  border-top none
+  border-left none
+  border-right none
 
   .header-content {
     position relative
@@ -26,7 +30,7 @@ $logo-image-box-width = 46px
     max-width $content-max-width
     height 100%
     transition-t("max-width, width", "0, 0", "0.1, 0.1", "ease, ease")
-
+    
 
     &.has-first-screen {
       max-width $has-fs-content-max-width
@@ -80,7 +84,7 @@ $logo-image-box-width = 46px
       }
 
       .logo-title {
-        color var(--text-color-1)
+        color var(--home-text-color)
         font-weight bold
         font-size $logo-title-font-size
         line-height 1
