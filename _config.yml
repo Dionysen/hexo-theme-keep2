@@ -68,6 +68,7 @@ style:
 
     # First screen background image (You can use local image or image external link)
     background_img: /images/bg.png
+    background_img_dark: /images/bg_dark.png
 
     # First screen description
     # You can use the "||" to begin a newline, maximum is two lines.

@@ -131,6 +131,12 @@ $article-aging-tips-background-color = alpha($article-aging-tips-color, 0.1)
 $article-aging-tips-border-color = alpha($article-aging-tips-color, 0.6)
 
 
+$temp-img = hexo-config('style.first_screen.background_img')
+$first-screen-img = $temp-img ? $temp-img : '/images/bg.svg'
+
+$dark-temp-img = hexo-config('style.first_screen.background_img_dark')
+$first-screen-img-dark = $dark-temp-img ? $dark-temp-img : '/images/bg_dark.svg'
+
 // ==============================================================================================
 // theme dark mode color set
 // ==============================================================================================
@@ -213,6 +219,10 @@ $default-code-font-size = $custom-code-font-size ? convert($custom-code-font-siz
 //  light/dark mode color
 // ==============================================================================================
 root-color(mode) {
+
+  --first-screen-img-dynamic mode == 'light' ? url($first-screen-img) : url($first-screen-img-dark)
+
+
   // primary color
   --primary-color $primary-color
   --primary-color-light-1 $primary-color-light-1
