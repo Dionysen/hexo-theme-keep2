@@ -44,7 +44,7 @@ style:
 
   # Font family, customize font family. (you don't usually have to fill)
   # e.g. font_family: STKaiti, STSong, STHeiti
-  font_family: LXGW Bright, LXGW Bright SemiLight, Simsun, STSong
+  font_family: LXGW Bright, STSong, Simsun
 
   # Code font family and code font size, customize code font family and code font size. 
   # (you don't usually have to fill)
