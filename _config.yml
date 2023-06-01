@@ -14,7 +14,7 @@ base_info:
   title: DIONYSEN BLOG
 
   # Your blog website author name
-  author: Dionysen
+  author: 
 
 # ---------------------------------------------------------------------------------------
 # Theme style settings
@@ -40,24 +40,23 @@ style:
 
   # Font size, customize font size. (you don't usually have to fill)
   # e.g. font_size: 18px
-  font_size: 15px
-
+  font_size: 16px
 
   # Font family, customize font family. (you don't usually have to fill)
   # e.g. font_family: STKaiti, STSong, STHeiti
-  font_family: LXGW Wenkai Lite
+  font_family: LXGW Bright, LXGW Bright SemiLight, Simsun, STSong
 
   # Code font family and code font size, customize code font family and code font size. 
   # (you don't usually have to fill)
-  code_font_family: LXGW Wenkai Mono, Source Code Pro
-  code_font_size: 1rem
+  code_font_family: Source Code Pro, LXGW Bright
+  code_font_size: 0.9rem
 
   # Mouse hover style settings
   hover:
     # Shadow effect when the mouse hover
-    shadow: true  # Option values: true | false
+    shadow: false  # Option values: true | false
     # Scale effect when the mouse hovers
-    scale: true   # Option values: true | false
+    scale: false   # Option values: true | false
 
   # First screen style settings
   first_screen:
@@ -119,7 +118,8 @@ social_contact:
     # at the same time change your link to the image link.
     # e.g. [ weixin: img | https://x.com/images/wechat.png ] or [ weixin: img | ./images/wechat.png ]
     github: https://github.com/Dionysen
-    weixin:          # WeChat
+    weixin: img | https://cdn.jsdelivr.net/gh/Dionysen/BlogCDN@main/img/wechat.jpg
+         # WeChat
     qq:              # QQ
     weibo:           # WeiBo
     zhihu:           # ZhiHu
@@ -148,7 +148,7 @@ home_article:
 post:
   # Author label in the post
   author_label:
-    enable: true  # Option values: true | false
+    enable: false  # Option values: true | false
 
     # If true, show Lv1, Lv2, Lv3 ...
     # If false, show custom_label_list
@@ -286,7 +286,7 @@ lazyload:
 # Docs: https://keep-docs.xpoet.cn/tutorial/configuration-guide/cdn.html
 # ---------------------------------------------------------------------------------------
 cdn:
-  enable: false       # Option values: true | false
+  enable: true       # Option values: true | false
   provider: jsdelivr  # Option values: jsdelivr | unpkg
 
 # ---------------------------------------------------------------------------------------

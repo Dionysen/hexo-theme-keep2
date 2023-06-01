@@ -1,9 +1,8 @@
 @import "code-theme.styl"
-@import "./source-code-pro/stylesheet.css"
 
 
 $code-block {
-  margin 1.5rem 0
+  margin 1.5rem
   padding 0
   overflow auto
   color var(--highlight-foreground)
@@ -22,7 +21,7 @@ code {
 code {
   padding 0px 2px 0px 2px
   color var(--code-foreground)
-  font-size 0.96rem
+  font-size $default-code-font-size
   word-wrap break-word
   white-space normal
   background var(--code-background)
@@ -32,8 +31,7 @@ code {
 
 pre {
   @extend $code-block
-  padding 0.6rem
-
+  padding-left 0.6rem
   code {
     padding 0
     color var(--highlight-foreground)
@@ -59,14 +57,15 @@ pre {
 
   pre {
     margin 0
-    padding 0.6rem 0
+    padding 0.6rem
     border none
     // white-space normal
     // word-break normal
     // word-wrap break-word
-
+    font-family $default-code-font-family
     white-space break-spaces
-    font-size 0.96rem
+    font-size $default-code-font-size
+    text-align left
   }
 
 

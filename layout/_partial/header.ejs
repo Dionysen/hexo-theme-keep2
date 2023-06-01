@@ -35,6 +35,7 @@ const { enable: local_search_enable } = theme.local_search
                         <li class="menu-item search search-popup-trigger">
                             <i class="fas fa-search"></i>
                         </li>
+                       
                     <% } %>
                 </ul>
             </div>
@@ -57,9 +58,14 @@ const { enable: local_search_enable } = theme.local_search
                        href="<%- url_for(theme.menu[i]) %>"><%= __(i.toLowerCase()).toUpperCase() %></a>
                 </li>
             <% } %>
+            <!-- <li class="menu-item tool-dark-light-toggle flex-center">
+                <i class="fas fa-moon"></i>
+            </li> -->
         </ul>
     </div>
-
+    <li class="menu-item tool-dark-light-toggle flex-center">
+        <i class="fas fa-moon"></i>
+    </li>
     <div class="window-mask"></div>
 
 </header>

@@ -31,6 +31,13 @@ $logo-image-box-width = 46px
     height 100%
     transition-t("max-width, width", "0, 0", "0.1, 0.1", "ease, ease")
     
+    margin-right 2rem
+    +keep-mobile() {
+      margin-right 0.9rem
+    }
+    +keep-table() {
+      margin-right 0.9rem
+    }
 
     &.has-first-screen {
       max-width $has-fs-content-max-width
@@ -149,7 +156,9 @@ $logo-image-box-width = 46px
 
             &.search {
               margin-left 26px
-              font-size $pc-search-icon-font-size
+              // margin-right 26px
+              // font-size $pc-search-icon-font-size
+              font-size 17px
 
               i {
                 color var(--text-color-3)
